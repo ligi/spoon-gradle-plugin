@@ -33,6 +33,7 @@ repositories {
   mavenLocal()
   google()
   jcenter()
+  maven { url 'https://oss.sonatype.org/content/repositories/snapshots' } 
 }
 
 dependencies {
@@ -41,7 +42,7 @@ dependencies {
 
   compile 'com.squareup.spoon:spoon-runner:2.0.0-SNAPSHOT'
 
-  compile('com.android.tools.build:gradle:3.0.0-beta7') {
+  compile('com.android.tools.build:gradle:3.0.0') {
     exclude group: 'org.jetbrains.trove4j'
   }
 
